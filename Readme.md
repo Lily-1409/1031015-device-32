@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
-* Студент: [Неопознанный енот](https://up.htmlacademy.ru/htmlcss/32/user/1031015).
-* Наставник: `Олег Цыганов`.
+* Студент: [Лилия Аникина] (https://up.htmlacademy.ru/htmlcss/32/user/1031015).
+* Наставник: [Олег Цыганов] (https://up.htmlacademy.ru/profession/frontender/12/htmlcss/user/904531).
 
 ---
 
