@@ -7,12 +7,12 @@
 <body>
   <header class="main-header">
     <h1 class="visually-hidden">Device</h1>
-    <a href="#">
+    <a class="logo-link" href="#">
      <img class="logo" src="" alt="Логотип Device">
     </a>
     <form>
       <label>
-       <img crs="site-search" alt="Поисковая строка">
+       <img class="site-search" src="" alt="Поисковая строка">
        <input type="text" name="catalog-item">
       </label>
     </form>
@@ -29,10 +29,22 @@
     </ul>
     <div class="catalog">
       <a class="catalog-link" href="catalog.html">Каталог товаров</a>
+      <ul class="catalog-list">
+        <li class="catalog-item"><span>Виртуальная реальность</span></li>
+        <li class="catalog-item"><span>Моноподы для сэлфи</span></li>
+        <li class="catalog-item"><span>Экшн-камеры</span></li>
+      </ul>
+      <ul class="catalog-list">
+        <li class="catalog-item"><span>Фитнес-браслеты</span></li>
+        <li class="catalog-item"><span>Умные часы</span></li>
+      </ul>
+      <ul class="catalog-list">
+        <li class="catalog-item"><span>Квадракоптеры</span></li>
+      </ul>
     </div>
     <nav class="main-navigation">
       <ul class="navigation-list">
-         <li class="navigarion-item">
+       <li class="navigarion-item">
           <a class="navigation-item-link" href="delivery.html">Доставка</a>
         </li>
         <li class="navigarion-item">
@@ -48,10 +60,10 @@
     <div class="slider">
       <div class="slider-1">
         <img class="slider-image" src="" alt="Товар-1">
-        <h2 class="title">Порхает как бабочка,<br>
+        <h2 class="title">Порхает как бабочка,
           жалит как пчела!
         </h2>
-        <p>Этот обычный, на первый взгляд, квадрокоптер оснащен <br>
+        <p>Этот обычный, на первый взгляд, квадрокоптер оснащен 
           мощным лазером, замаскированным под стандартную камеру.
         </p>
         <a class="button button-all" href="#">Подробнее
@@ -68,10 +80,10 @@
         </table>
      <div class="slider-2">
         <img class="slider-image" src="" alt="Товар-2">
-        <h2 class="title">Худеем<br>
+        <h2 class="title">Худеем
             правильно!
         </h2>
-        <p>Мотивирующие фитнес-браслеты помогут найти в себе силы <br>
+        <p>Мотивирующие фитнес-браслеты помогут найти в себе силы 
             не пропускать занятия и соблюдать диету.
         </p>
         <a class="button button-all" href="#">Подробнее
@@ -86,10 +98,10 @@
         </table>      
      <div class="slider-3">
        <img class="slider-image" src="" alt="Товар-3">
-       <h2 class="title">Делай селфи, <br>
+       <h2 class="title">Делай селфи, 
             как Бен Стиллер!
        </h2>
-       <p>Самая длинная палка для селфи доступна в нашем магазине.<br>
+       <p>Самая длинная палка для селфи доступна в нашем магазине.
           Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
        </p>
        <a class="button button-all" href="#">Подробнее
@@ -251,46 +263,38 @@
       </ul>
       <a class="button button-all" href="#">Напишите нам</a>
     </section>
-    <div class="subscription">
-      <div class="subscription-title-1">
-       <h2 class="subscription-title">Подпишитесь на рассылку</h2>
-      </div>
-      <div class="paragraph">
-       <p>
+   <div class="subscription">
+      <h2 class="subscription-title">Подпишитесь на рассылку</h2>
+      <p>
         Еженедельный дайджест с обзорами новинок,
         длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.
-       </p>
-     </div>
+      </p>
      <div class="subscription-form">
-       <form>
-         <input ID="mail" type="email">
-         <button type="button">Подписаться</button>
-       </form>
-       <div class="free">
-        <img class="check-mark" src="" alt="">
-        <span>Это бесплатно</span>
-       </div>
+        <form>
+          <input id="mail" type="email">
+          <button type="button">Подписаться</button>
+        </form>
+        <div class="free">
+         <img class="check-mark" src="" alt="">
+         <span>Это бесплатно</span>
+        </div>
       </div>
     </div>
   </main>
   <footer class="page-footer">
-    <section class="footer-adress">
-      <h1 class="visually-hidden">Device</h1>
-      <a href="#">
-       <img class="logo" src="" alt="Логотип Device">
-     </a>
-     <adress class="contact-adress">
-       <p class="contacts-adress-text">
+   <a class="logo-link" href="#">
+      <img class="logo" src="" alt="Логотип Device">
+   </a>
+   <div class="contacts">
+     <adress class="contact-info">
+       <p class="contacts-info-text">
        Санкт-Петербург, набережная реки Карповки, 5, литера П.
        </p>
      </adress>
-     <img class="red-line" src="" alt="Red-line">
-    </section>
-    <section class="footer-contacts">
-      <ul class="footer-condition-list">
+     <ul class="footer-condition-list">
         <li class="footer-condition-item">
           <a href="#">
-            <span class="footer-condition-text">Доставка</span>
+           <span class="footer-condition-text">Доставка</span>
           </a>
         </li>
         <li class="footer-condition-item">
@@ -304,30 +308,30 @@
           </a>
         </li>
       </ul>
-      <ul class="social-media-list">
-        <li class="social-media-item">
+      <a href="+78128121212">Тел.:+7 (812) 812-12-12</a>
+    </div>
+    <div class="social-networks">
+      <ul class="social-networks-list">
+        <li class="social-networks-item">
           <a href="http://www.facebook.com/htmlacademy">
-            <img class="social-media-image" src="" alt="Facebook">
+            <img class="social-networks-image" src="" alt="Facebook">
           </a>
         </li>
-        <li class="social-media-item">
+        <li class="social-networks-item">
           <a href="http://www.instagram.com/htmlacademy/">
-            <img class="social-media-image" src="" alt="Instagram">
+            <img class="social-networks-image" src="" alt="Instagram">
           </a>
         </li>
-        <li class="social-media-item">
+        <li class="social-networks-item">
           <a href="http://www.twitter.com/htmlacademy_ru">
-            <img class="social-media-image" src="" alt="Twitter">
+            <img class="social-networks-image" src="" alt="Twitter">
           </a>
         </li>
       </ul>
-    </section>
-    <section class="footer-phone">
-      <span> Тел.:+7 (812) 812-12-12 </span>
       <a href="https://htmlacademy.ru/study">
-        <img class="logo-html" src="" alt="Логотип Device">
+        <img class="logo-html" src="" alt="Логотип htmlacademy">
       </a>
-    </section>
+    </div>
   </footer>
 </body>
 
