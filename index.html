@@ -7,7 +7,7 @@
 <body>
   <header class="main-header">
     <h1 class="visually-hidden">Device</h1>
-    <a class="logo-link" href="#">
+    <a class="logo-link">
      <img class="logo" src="" alt="Логотип Device">
     </a>
     <form>
@@ -30,16 +30,16 @@
     <div class="catalog">
       <a class="catalog-link" href="catalog.html">Каталог товаров</a>
       <ul class="catalog-list">
-        <li class="catalog-item"><span>Виртуальная реальность</span></li>
-        <li class="catalog-item"><span>Моноподы для сэлфи</span></li>
-        <li class="catalog-item"><span>Экшн-камеры</span></li>
+        <li class="catalog-item"><a class="catalog-item-link" href="#">Виртуальная реальность</a></li>
+        <li class="catalog-item"><a class="catalog-item-link" href="#">Моноподы для сэлфи</a></li>
+        <li class="catalog-item"><a class="catalog-item-link" href="#">Экшн-камеры</a></li>
       </ul>
       <ul class="catalog-list">
-        <li class="catalog-item"><span>Фитнес-браслеты</span></li>
-        <li class="catalog-item"><span>Умные часы</span></li>
+        <li class="catalog-item"><a class="catalog-item-link" href="#">Фитнес-браслеты</a></li>
+        <li class="catalog-item"><a class="catalog-item-link" href="#">Умные часы</a></li>
       </ul>
       <ul class="catalog-list">
-        <li class="catalog-item"><span>Квадракоптеры</span></li>
+        <li class="catalog-item"><a class="catalog-item-link" href="#">Квадракоптеры</a></li>
       </ul>
     </div>
     <nav class="main-navigation">
@@ -78,13 +78,14 @@
             <td>Радиус поражения</td>
           </tr>
         </table>
+     </div>
      <div class="slider-2">
         <img class="slider-image" src="" alt="Товар-2">
         <h2 class="title">Худеем
-            правильно!
+          правильно!
         </h2>
         <p>Мотивирующие фитнес-браслеты помогут найти в себе силы 
-            не пропускать занятия и соблюдать диету.
+          не пропускать занятия и соблюдать диету.
         </p>
         <a class="button button-all" href="#">Подробнее
         </a>
@@ -95,11 +96,12 @@
           <tr class="parameter">
            <td>Без подзарядки</td>
           </tr>
-        </table>      
+        </table>   
+     </div>   
      <div class="slider-3">
        <img class="slider-image" src="" alt="Товар-3">
        <h2 class="title">Делай селфи, 
-            как Бен Стиллер!
+         как Бен Стиллер!
        </h2>
        <p>Самая длинная палка для селфи доступна в нашем магазине.
           Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
@@ -118,70 +120,73 @@
            <td>Материал</td>
          </tr>
        </table>
-       <button class="slider-button slider-prev" type="button">
-         <span class="visually-hidden">Предыдущий слайд</span>
-       </button>
-       <button class="slider-button slider-next" type="button">
-         <span class="visually-hidden">Следующий слайд</span>
-       </button>
      </div>
-       <ol class="slider-pagination">
-        <li class="slider-pagination-item">
-          <button class="slader-pagination-button slider-pagination-button-current" type="button">
-            <span class="visually-hidden">1 товар</span>
-          </button>
-        </li>
-        <li class="slider-pagination-item">
-          <button class="slader-pagination-button slider-pagination-button-current" type="button">
-            <span class="visually-hidden">2 товар</span>
-          </button>
-        </li>
-        <li class="slider-pagination-item">
-          <button class="slader-pagination-button slider-pagination-button-current" type="button">
-            <span class="visually-hidden">3 товар</span>
-          </button>
-        </li>
-      </ol>
-      <section class="open-catalog">
-       <h2 class=visually-hidden>Категории товаров</h2>
-       <ul class="open-catalog-list">
-         <li class="open-catalog-item">
-           <a href="#">
-             <img class="item-image" src="" alt=" ">
-             <b>Витуальная реальность</b>
-           </a>
+     <button class="slider-button slider-prev" type="button">
+        <span class="visually-hidden">Предыдущий слайд</span>
+     </button>
+     <button class="slider-button slider-next" type="button">
+        <span class="visually-hidden">Следующий слайд</span>
+     </button>
+     <div class="pagination">
+       <ul class="slider-pagination">
+         <li class="slider-pagination-item">
+           <button class="slader-pagination-button slider-pagination-button-current" type="button">
+             <span class="visually-hidden">1 товар</span>
+            </button>
          </li>
-         <li class="open-catalog-item"> 
-           <a href="#">
-             <img class="item-image" src="" alt=" ">
-             <b>Моноподы для селфи</b>
-           </a>
+         <li class="slider-pagination-item">
+           <button class="slader-pagination-button slider-pagination-button-current" type="button">
+             <span class="visually-hidden">2 товар</span>
+           </button>
          </li>
-         <li class="open-catalog-item">
-           <a href="#">
-             <img class="item-image" src="" alt=" ">
-             <b>Экшн-камеры</b>
-            </a>
+         <li class="slider-pagination-item">
+           <button class="slader-pagination-button slider-pagination-button-current" type="button">
+             <span class="visually-hidden">3 товар</span>
+           </button>
          </li>
-         <li class="open-catalog-item"> 
-           <a href="#">
-             <img class="item-image" src="" alt=" ">
-              <b>Фитнес-браслеты</b>
-           </a>
-         </li>
-         <li class="open-catalog-item"> 
-           <a href="#">
-             <img class="item-image" src="" alt=" ">
-             <b>Умные часы</b>
-           </a>
-         </li>
-         <li class="open-catalog-item"> 
-           <a href="#">
-             <img class="item-image" src="" alt=" ">
-             <b>Квадракоптеры</b>
-           </a>
-         </li>
-      </ul>
+       </ul>
+     </div>
+   </div>
+   <section class="open-catalog">
+     <h2 class=visually-hidden>Категории товаров</h2>
+     <ul class="open-catalog-list">
+       <li class="open-catalog-item">
+         <a href="#">
+           <img class="item-image" src="" alt=" ">
+            <b>Витуальная реальность</b>
+         </a>
+       </li>
+       <li class="open-catalog-item"> 
+         <a href="#">
+           <img class="item-image" src="" alt=" ">
+            <b>Моноподы для селфи</b>
+         </a>
+       </li>
+       <li class="open-catalog-item">
+         <a href="#">
+            <img class="item-image" src="" alt=" ">
+            <b>Экшн-камеры</b>
+         </a>
+       </li>
+       <li class="open-catalog-item"> 
+         <a href="#">
+            <img class="item-image" src="" alt=" ">
+            <b>Фитнес-браслеты</b>
+          </a>
+       </li>
+       <li class="open-catalog-item"> 
+         <a href="#">
+            <img class="item-image" src="" alt=" ">
+            <b>Умные часы</b>
+          </a>
+       </li>
+       <li class="open-catalog-item"> 
+          <a href="#">
+            <img class="item-image" src="" alt=" ">
+            <b>Квадракоптеры</b>
+          </a>
+       </li>
+     </ul>
     </section>
     <section class="condition">
       <ul class="condition-list">
@@ -221,13 +226,13 @@
         </li>
       </ul>
     </section>
-    <artcile>
+    <article>
       <button class="order" type="button">
         <img class="order-image" src="" alt=" ">
         <span>Доставим редкий товар под заказ</span>
         <img class="order-info" src="" alt=" ">
       </button>
-    </artcile>
+    </article>
     <section class="about-us">
       <h2 class="about-us-title">О нас</h2>
       <p>
@@ -250,20 +255,20 @@
        Заодно, сможете проверить работоспособность покупки.
       </p>
       <h3 class="contacts-info">Интернет-магазин "Девайс"</h3>
-      <adress class="contact-adress">
+      <addres class="contact-adress">
         <p class="contacts-adress-text">
          Санкт-Петербург, набережная реки Карповки, 5, литера П.
         </p>
-        <a class="contact-phone" href="tel:88128121212">+7 (812) 812-12-12</a>
-      </adress>
-      <h3 class="contacts-info">Время работы</h4>
+        <a class="contact-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      </address>
+      <h3 class="contacts-info">Время работы</h3>
       <ul class="contact-schedule">
         <li class="contact-schedule-item">пн—пт: с 10:00 до 22:00</li>
         <li class="contact-schedule-item">сб—вс: с 10:00 до 19:00</li>
       </ul>
       <a class="button button-all" href="#">Напишите нам</a>
     </section>
-   <div class="subscription">
+   <section class="subscription">
       <h2 class="subscription-title">Подпишитесь на рассылку</h2>
       <p>
         Еженедельный дайджест с обзорами новинок,
@@ -279,18 +284,18 @@
          <span>Это бесплатно</span>
         </div>
       </div>
-    </div>
+    </section>
   </main>
   <footer class="page-footer">
-   <a class="logo-link" href="#">
+   <a class="logo-link">
       <img class="logo" src="" alt="Логотип Device">
    </a>
    <div class="contacts">
-     <adress class="contact-info">
+     <addres class="contact-info">
        <p class="contacts-info-text">
        Санкт-Петербург, набережная реки Карповки, 5, литера П.
        </p>
-     </adress>
+     </addres>
      <ul class="footer-condition-list">
         <li class="footer-condition-item">
           <a href="#">
@@ -308,7 +313,7 @@
           </a>
         </li>
       </ul>
-      <a href="+78128121212">Тел.:+7 (812) 812-12-12</a>
+      <a href="tel:+78128121212">Тел.:+7 (812) 812-12-12</a>
     </div>
     <div class="social-networks">
       <ul class="social-networks-list">
