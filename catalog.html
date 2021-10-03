@@ -17,7 +17,8 @@
   </form>
   <ul class="user-actions">
     <li class="user-action">
-      <a href="#">Войти</a>
+      <span class="user-name">Коля Петухов</span>
+      <a href="#">Выйти</a>
     </li>
     <li class="user-action">
       <a href="#">Сравнить</a>
@@ -162,49 +163,46 @@
         </select>
         <button class="visiually-hidden" type="submit">Отсортировать продукт</button>
       </form>
-      <a class="direct-sort-order" href="#">
+      <button class="direct-sort-order" type="button">
         <span class="visiually-hidden">Прямой порядок сортировки</span>
-      </a>
-      <a class="reverse-sort-order" href="#">
+      </button>
+      <button class="reverse-sort-order" type="button">
         <span class="visiually-hidden">Обратный порядок сортировки</span>
-      </a>
+      </button>
     </div>
     <ul class="product-list">
       <li class="product-card">
         <a class="product-card-link" href="#">
           <img class="product-card-image" src="" alt="">
-          <span class="product-show-more">Подробнее</span>
-          <span class="product-new">New</span>
+          <span class="product-show-more button">Подробнее</span>
           <h3 class="product-card-title">Любительская селфи-палка</h3>
+          <span class="product-card-price">500 ₽</span>
         </a>
-        <span class="product-card-price">500 ₽</span>
       </li>
       <li class="product-card">
         <a class="product-card-link" href="#">
           <img class="product-card-image" src="" alt="">
-          <span class="product-show-more">Подробнее</span>
-          <span class="product-new">New</span>
+          <span class="product-show-more button">Подробнее</span>
           <h3 class="product-card-title">Профессиональная селфи-палка</h3>
+          <span class="product-card-price">1500 ₽</span>
         </a>
-        <span class="product-card-price">1500 ₽</span>
       </li>
       <li class="product-card">
         <a class="product-card-link" href="#">
           <img class="product-card-image" src="" alt="">
-          <span class="product-show-more">Подробнее</span>
+          <span class="product-show-more button">Подробнее</span>
           <span class="product-new">New</span>
           <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
+          <span class="product-card-price">2500 ₽</span>
         </a>
-        <span class="product-card-price">2500 ₽</span>
       </li>
       <li class="product-card">
         <a class="product-card-link" href="#">
           <img class="product-card-image" src="" alt="">
-          <span class="product-show-more">Подробнее</span>
-          <span class="product-new">New</span>
+          <span class="product-show-more button">Подробнее</span>
           <h3 class="product-card-title">Селфи-палка "Следуй за мной"</h3>
+          <span class="product-card-price">4900 ₽</span>
         </a>
-        <span class="product-card-price">4900 ₽</span>
       </li>
     </ul>
     <button class="loading" type="button">
@@ -226,7 +224,7 @@
           <a class="pagination-link" href="#">3</a>
         </li>
         <li class="pagination-item">
-          ...
+          <span class="pagination-three-dot">...</span>
         </li>
         <li class="pagination-item">
           <a class="pagination-link" href="#">15</a>
@@ -248,7 +246,7 @@
       Санкт-Петербург, набережная реки Карповки, 5, литера П.
       </p>
     </addres>
-    <ul class="footer-condition-list">
+    <ul class="footer-condition-list"> 
        <li class="footer-condition-item">
          <a href="#">
           <span class="footer-condition-text">Доставка</span>
