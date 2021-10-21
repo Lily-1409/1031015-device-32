@@ -22,12 +22,24 @@
     font-display: swap;
 }
 
+html {
+    height: 100%;
+}
+
 body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: "Rubik", sans-serif;
     font-size: 18px;
     line-height: 30px;
     background-color:#ffffff;
     color: #444444;
+}
+
+.main-container {
+   flex-grow: 1; 
 }
 
 body a{
@@ -56,6 +68,102 @@ color: #000000;
     line-height: 18px;
     background-color:#ffe17f;
     color: #000000;
+}
+
+.main-header {
+    display: flex;
+    flex-direction: column;
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.main-header-container {
+   padding: 49px 25px 53px 60px;
+}
+
+.header-container {
+    display: flex;
+    margin-bottom: 44px;
+ }
+
+.user-actions {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    width: 535px;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.user-action:first-child {
+    margin-right: auto;
+    width: 220px;
+    margin-right: 15px;
+}
+
+.user-action:nth-child(2) {
+    width: 100px;
+    margin-right: 15px;
+}
+
+.user-action:nth-child(3) {
+    width: 100px;
+}
+
+.site-search{
+    display: inline-block;
+    margin-right: 20px;
+    }
+
+.user-action-iсon {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.user-action:first-child .user-action-iсon {
+    margin-right: 12px;
+}
+
+.search-input {
+    width: 480px;
+    background-color: transparent;
+    border: none; 
+}
+
+.user-action {
+    width: 100px;
+}
+
+.catalog-navigation {
+    display: flex;
+}
+
+.catalog-link {
+   display: block;
+    width:236px;
+    margin-right: 304px;
+}
+
+.navigation-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 560px;
+}
+
+.navigation-item-link {
+    display:block;
+    width: 140px;
+}
+
+.navigation-item:first-child {
+    margin-right: 15px;
+}
+
+.navigation-item:last-child {
+    margin-left: auto;
 }
 
 /*main*/
@@ -120,6 +228,200 @@ color: #000000;
     text-transform:uppercase;
 }
 
+.slider {
+    display: flex;
+    flex-direction: column;
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.slider-content {
+    width: 560px;
+}
+
+.button {
+    display: block;
+    width: 220px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+
+.characteristics td {
+    padding-right: 20px;
+    min-width: 140px;
+}
+
+.slider-item {
+    display: flex;
+}
+
+.open-catalog{
+    width: 1160px;
+    margin: 0 auto;
+    margin-bottom: 69px;
+}
+.open-catalog-list {
+    display:flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+}
+
+.open-catalog-image {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFE17F;
+    margin-bottom: 33px;
+    height: 160px;
+}
+
+.open-catalog-item {
+    width: 160px;
+    justify-content: space-between;
+}
+
+.open-catalog-item b {
+    display: block;
+}
+
+.condition {
+    display: flex;
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.condition-list {
+    width: 280px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-right:120px;
+}
+
+.condition .button-all{
+    display: block;
+    width: 160px;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.description-list {
+    padding: 0;
+    margin: 0;
+}
+
+.desciption-item-block {
+    width: 560px;
+}
+
+.desciption-item-block h2{
+ margin: 0;   
+}
+
+.desciption-item-block p{
+    width: 497px;
+}
+
+.description-item {
+    display: flex;
+}
+
+.order {
+    display: flex;
+    width: 1160px;
+    justify-content: space-between;
+    margin: 0 auto;
+    border: transparent;
+}
+
+.order-image-car {
+    width: 125px;
+    background-color: #FFE17F;
+    padding: 35px 34px 34px 39px;
+}
+
+.delivery-complex-order {
+    display: block;
+    padding-top: 37px;
+    padding-bottom: 43px;
+    width: 910px;
+}
+
+.order-info-block {
+    display: block;
+    margin: 29px 33px 31px 52px;
+}
+
+.additional-info {
+    display:flex;
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.about-us {
+    margin-right: 103px;
+}
+
+.about-us, .contacts {
+display:flex;
+flex-direction: column;
+}
+
+.info_button {
+    width: 260px;
+    text-align: center;
+}
+
+.decription-info {
+    width: 497px;
+}
+
+.contacts-address-text, .contact-phone {
+    min-width: 513px;
+    font-style: normal;
+}
+
+.mailing {
+    width: 1160px;
+    margin: 0 auto;
+    background-color: #F0F0F0;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.mailing .title {
+    width: 560px;
+    margin: 75px 40px 53px 0px;
+}
+
+.mailing-paragraph {
+    width: 560px;
+    margin: 86px 0px 50px 0px;
+}
+
+.subscription-form {
+    display: flex;
+}
+
+.mail-bar {
+    width: 552px;
+    background-color: transparent;
+    margin-right: 40px;
+}
+
+.subscription-button {
+    width: 260px;
+    padding: 17px 0px 17px 0px;
+    margin-right: 136px;
+}
+
+.free {
+    align-self: center;
+}
+
 /*footer*/
 .page-footer {
     font-size: 16px;
@@ -129,7 +431,7 @@ color: #000000;
 
 .contacts-info-text {
     line-height: 19px;
-}s
+}
 
 .page-footer a {
     color: #ffffff;
@@ -144,6 +446,63 @@ color: #000000;
     color: #ffffff;
 }
 
+.page-footer {
+    display: flex;
+    flex-direction: column;
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.footer-contacts {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+}
+
+.contacts-info-text {
+    margin:0;
+    width:238px;
+    margin-right: 114px;
+}
+
+.footer-condition-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    align-items: center;
+}
+
+.footer-condition-text {
+    display: block;
+    width: 148px;
+    margin-right: 7px;
+}
+
+.contact-ph {
+    width: 293px;
+    margin-left: 51px;
+    text-align:right;
+}
+
+.social-networks {
+    display: flex;
+}
+
+.social-networks-list {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding:0;
+    list-style-type:none;
+    width: 1160px;
+    justify-content: center;
+}
+
+.social-networks-item:nth-child(2) {
+    margin-left: 15px;
+    margin-right: 15px;
+}
 /*catalog*/
 .breadcrumbs, .control-label {
     font-size: 16px;
