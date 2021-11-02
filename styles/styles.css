@@ -132,6 +132,12 @@ body a {
     width: 100px;
 }
 
+.site-search-bar {
+    display: flex;
+    width: 516px;
+    height: 20px;
+}
+
 .site-search {
     display: inline-block;
     margin-right: 20px;
@@ -159,6 +165,15 @@ body a {
 .catalog-navigation {
     display: flex;
     margin-bottom: 53px;
+}
+
+.hidden-catalog-list {
+    display: flex;
+}
+
+.catalog-list {
+    list-style-type: none;
+    padding: 33px 0px 27px 60px;
 }
 
 .catalog-link {
@@ -301,6 +316,29 @@ body a {
     display: flex;
 }
 
+.slider-pagination {
+    display: flex;
+}
+
+.slider-pagination-item {
+    list-style-type: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid #000000;
+    margin-right: 22px;
+}
+
+.slider-pagination-item:last-child {
+    margin-right: 0;
+}
+
+.slider-button {
+    padding: 0;
+    background-color: white;
+    width: 20px;
+}
+
 .open-catalog {
     width: 1160px;
     margin: 0 auto;
@@ -338,8 +376,13 @@ body a {
 }
 
 .condition {
+    background-color: #F0F0F0;
+}
+
+.condition-container {
     display: flex;
     width: 1160px;
+    margin: 0 auto;
     margin-bottom: 69px;
 }
 
@@ -389,8 +432,10 @@ body a {
 .order {
     display: flex;
     width: 1160px;
+    margin: 0 auto;
     justify-content: space-between;
     border: transparent;
+    padding: 0;
     margin-top: 90px;
     margin-bottom: 97px;
 }
@@ -435,6 +480,12 @@ body a {
     margin: 0;
     padding: 0px;
     margin-bottom: 52px;
+    list-style-type: none;
+    padding-left: 35px;
+}
+
+.delivery-item {
+    margin-bottom: 20px;
 }
 
 .about-us {
@@ -473,8 +524,20 @@ body a {
     margin-bottom: 30px;
 }
 
+.contact-phone {
+    text-decoration: underline;
+}
+
 .contact-schedule {
     margin-bottom: 67px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 67px;
+}
+
+.subscription {
+    background-color: #F0F0F0;
 }
 
 .mailing {
@@ -498,18 +561,25 @@ body a {
 .subscription-form {
     display: flex;
     margin-bottom: 131px;
+    width: 1160px;
 }
 
 .mail-bar {
-    width: 552px;
+    width: 560px;
+    height: 30px;
     background-color: transparent;
     margin-right: 40px;
+    border: 0px solid #F0F0F0;
+}
+
+.sub-form {
+    border-bottom: 3px solid #000000;
+    margin-right: auto;
 }
 
 .subscription-button {
     width: 260px;
     padding: 17px 0px 17px 0px;
-    margin-right: 136px;
 }
 
 .free {
@@ -542,7 +612,7 @@ body a {
     color: #ffffff;
 }
 
-.page-footer {
+.footer-container {
     display: flex;
     flex-direction: column;
     width: 1160px;
@@ -648,6 +718,10 @@ form .button {
     line-height: 18px;
 }
 
+.catalog-filters-title {
+    margin: 0;
+}
+
 .product-card-title {
     font-weight: 700;
     font-size: 18px;
@@ -658,13 +732,11 @@ form .button {
     line-height: 21px;
 }
 
-.main-container {
+.inner-header {
     width: 1160px;
     margin: 0 auto;
-}
-
-.inner-header {
     padding-left: 60px;
+    box-sizing: border-box;
 }
 
 .inner-header h1 {
@@ -688,6 +760,7 @@ form .button {
 .catalog-container {
     display: flex;
     width: 1160px;
+    margin: 0 auto;
 }
 
 .catalog-filters {
@@ -716,6 +789,7 @@ form .button {
 .catalog-filter-titile {
     display: block;
     height: 34px;
+    margin-top: 12px;
 }
 
 .catalog-filter-slider {
@@ -725,6 +799,7 @@ form .button {
 
 .catalog-filter-label {
     display: flex;
+    margin-bottom: 36px;
 }
 
 .catalog-filter-input {
@@ -737,10 +812,11 @@ form .button {
     padding: 0;
     margin: 0;
     list-style-type: none;
+    margin-bottom: 24px;
 }
 
-.control-mark {
-    margin-right: 17px;
+.control-label {
+    margin-bottom: 21px;
 }
 
 form .button {
