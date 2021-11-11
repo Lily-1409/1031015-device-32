@@ -218,17 +218,20 @@ body a {
     display: none;
 }
 
-.search-button:focus-visible {
+.search-button:focus-visible,
+.subscription-button:focus {
     border-color: #AF4FFF;
     outline: none;
 }
 
-.search-button:hover {
+.search-button:hover,
+.subscription-button:hover {
     background-color: #000;
     color: #fff;
 }
 
-.search-button:active {
+.search-button:active,
+.subscription-button:active {
     border-color: #000;
     background-color: #000;
     color: rgba(255, 255, 255, 0.3);
@@ -670,6 +673,7 @@ a .user-action-icon {
     padding: 0;
     margin-top: 90px;
     margin-bottom: 97px;
+    align-items: center;
 }
 
 .order-image-car {
@@ -691,20 +695,35 @@ a .user-action-icon {
 }
 
 .order-info-block {
-    display: block;
-    margin: 29px 33px 31px 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid transparent;
+    background-color: rgba(220, 220, 220, 0.5);
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    margin-right: 33px;
 }
 
 .order:focus {
     border: 5px solid #AF4FFF;
 }
 
-.order:active {
-    opacity: 0.3;
+.order:hover .order-image-car {
+    background-color: #FFC700;
 }
 
-.order-image-car:active {
-    background-color: #FFC700;
+.order:hover .order-info-block {
+    background-color: #DCDCDC;
+}
+
+.order:hover {
+    background-color: #EBEBEB;
+}
+
+.order:active {
+    opacity: 0.3;
 }
 
 .additional-info .container {
@@ -811,22 +830,60 @@ a .user-action-icon {
     width: 1160px;
 }
 
-.mail-bar {
-    width: 560px;
-    height: 30px;
-    background-color: transparent;
-    margin-right: 40px;
-    border: 0px solid #F0F0F0;
+.sub-form {
+    margin-right: auto;
+    display: flex;
 }
 
-.sub-form {
-    border-bottom: 3px solid #000000;
-    margin-right: auto;
+.sub-input {
+    display: block;
+    border: transparent;
+    width: 600px;
+}
+
+.mail-bar {
+    font-size: 18px;
+    line-height: 30px;
+    font-family: "Rubik", sans-serif;
+    color: #000000;
+    background-color: transparent;
+    border: 3px solid transparent;
+    border-bottom-color: rgba(0, 0, 0, 0.1);
+    padding: 13px 40px 9px 0px;
+    width: 100%;
+    height: 100%;
+    outline: none;
+}
+
+.mail-bar::placeholder {
+    color: #444444;
+    font-family: "Rubik", sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    opacity: 0.5;
+}
+
+.mail-bar:focus {
+    background-color: #DCDCDC;
+}
+
+.mail-bar:hover {
+    border-bottom-color: rgba(0, 0, 0, 0.2);
+}
+
+.mail-bar:active {
+    border-bottom-color: rgba(0, 0, 0);
+}
+
+.mail-bar:invalid {
+    border-bottom-color: #FF3D3D;
 }
 
 .subscription-button {
     width: 260px;
     padding: 17px 0px 17px 0px;
+    border: 3px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0px;
 }
 
 .free {
@@ -884,13 +941,50 @@ a .user-action-icon {
     margin: 0;
     padding: 0;
     list-style-type: none;
-    align-items: center;
+    align-items: center
+}
+
+.footer-condition-item {
+    position: relative;
+}
+
+.footer-condition-link {
+    display: block;
+    padding: 14px 20px 15px 20px;
+    border: 2px solid transparent;
+}
+
+.footer-condition-link:focus {
+    border: 2px solid #AF4FFF;
+    border-radius: 25px;
+    outline: none;
+}
+
+.footer-condition-link::after {
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid #FFC700;
+    left: 20px;
+    right: 20px;
+    bottom: 8px;
+    display: none;
+}
+
+.footer-condition-link:hover,
+.footer-condition-link:hover::after {
+    color: #FFC700;
+    display: block;
+}
+
+.footer-condition-link:active,
+.footer-condition-link:active::after {
+    color: #FFC700;
+    display: block;
+    opacity: 0.3;
 }
 
 .footer-condition-text {
     display: block;
-    width: 148px;
-    margin-right: 7px;
 }
 
 .footer-condition-text:last-child {
@@ -898,7 +992,6 @@ a .user-action-icon {
 }
 
 .contact-ph {
-    width: 293px;
     margin-left: auto;
     text-align: right;
 }
@@ -921,10 +1014,23 @@ a .user-action-icon {
 
 .social-networks-item {
     margin-right: 15px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
 }
 
 .social-networks-item:last-child {
     margin-right: 0;
+}
+
+.social-networks-item:hover {
+    fill: #FFC700;
+}
+
+.social-networks-icon:focus {
+    border: 5px solid #AF4FFF;
+    border-radius: 50%;
 }
 
 form .button {
