@@ -103,7 +103,7 @@ body a {
 .main-header-content {
     position: relative;
     background-color: #ffe17f;
-    padding: 49px 39px 53px 40px;
+    padding: 49px 39px 38px 40px;
 }
 
 .logo {
@@ -149,7 +149,7 @@ body a {
 
 
 /*.search-bar {
-    position: relative;
+position: relative;
 }*/
 
 .site-search-bar {
@@ -237,26 +237,8 @@ body a {
     color: rgba(255, 255, 255, 0.3);
 }
 
-.search-bar:focus-within {
-    /*border: 2px solid #AF4FFF;*/
-    /*box-sizing: border-box;*/
-    /*border-radius: 20px;*/
-}
-
 .search-input:focus {
     outline: none;
-}
-
-.search-bar:focus {
-    /*border: 2px solid #AF4FFF;*/
-    /*box-sizing: border-box;*/
-    /*border-radius: 20px;*/
-}
-
-.search-bar:active {
-    /*border: 2px solid #000000;*/
-    /*box-sizing: border-box;*/
-    /*border-radius: 20px;*/
 }
 
 .user-actions {
@@ -458,11 +440,11 @@ a .user-action-icon {
 }
 
 .button-all {
+    position: relative;
     font-family: "Raleway", sans-serif;
     font-weight: 800;
     font-size: 18px;
     line-height: 21px;
-    background-color: #ffe17f;
     color: #000000;
     text-transform: uppercase;
 }
@@ -512,11 +494,17 @@ a .user-action-icon {
     text-transform: uppercase;
 }
 
+/*Slider*/
+
 .slider .container {
     display: flex;
     flex-direction: column;
+    position: relative;
 }
-
+.slider-wrapper {
+    position: relative;
+    top: -30px;
+}
 .slider h2,
 .slider p {
     margin: 0;
@@ -525,6 +513,7 @@ a .user-action-icon {
 
 .slider h2 {
     margin-bottom: 19px;
+    color: #000000;
 }
 
 .slider p {
@@ -542,8 +531,33 @@ a .user-action-icon {
     text-align: center;
     margin-top: 30px;
     margin-bottom: 70px;
+    outline: none;
 }
 
+.slider-content .button{
+    padding: 14px 0px 16px 0px;
+}
+.slider-content .button::after{
+    content: "";
+    position:absolute;
+    background-color:#FFE17F;
+    width: 220px;
+    height:8px;
+     left:0;
+top: 50%;
+transform: translateY(-50%);
+z-index:-1;
+}
+.slider-content .button:focus::after{
+    background-color:#AF4FFF;
+}
+.slider-content .button:hover {
+    background-color:#FFE17F;
+}
+.slider-content .button:active {
+    background-color:#FFE17F;
+    opacity:0.3;
+}
 .characteristics td {
     padding-right: 20px;
     min-width: 140px;
@@ -562,23 +576,64 @@ a .user-action-icon {
 }
 
 .slider-pagination-item {
+    position:absolute;
     list-style-type: none;
     width: 12px;
     height: 12px;
     border-radius: 50%;
     border: 2px solid #000000;
     margin-right: 22px;
+    top:55%;
+    right: 0px;
 }
 
 .slider-pagination-item:last-child {
-    margin-right: 0;
+    margin-right: 0px;
 }
-
 .slider-button {
+    position:absolute;
     padding: 0;
     background-color: white;
-    width: 20px;
+    border: 2px solid transparent;
+    border-radius:5px;
+    width: 40px;
+    height:80px;
 }
+
+.slider-image {
+    margin-right: 41px;
+}
+
+.slider-button:focus {
+    border: 2px solid #AF4FFF;
+    border-radius:5px;
+}
+
+.slider-button:hover {
+    opacity:0.6;
+}
+.slider-button:active {
+    opacity:0.3;
+}
+.slider-prev-img, 
+.slider-next-img {
+    position: absolute;
+    top:8px;
+    left:8px;
+}
+
+.slider-prev {
+    top:50%;
+    left:0;
+    transform: translateY(-50%);
+}
+
+.slider-next {
+    top: 50%;
+    right: 600px;
+    transform: translateY(-50%);
+}
+
 
 .open-catalog {
     margin-bottom: 69px;
@@ -604,8 +659,8 @@ a .user-action-icon {
 .open-catalog-item {
     width: 160px;
     margin-right: 40px;
+    border: 5px solid transparent;
 }
-
 .open-catalog-item:last-child {
     margin-right: 0;
 }
@@ -614,13 +669,47 @@ a .user-action-icon {
     display: block;
 }
 
+.open-catalog-item:hover .open-catalog-image{
+    background: #FFC700;
+    outline: none;
+}
+.open-catalog-item:focus .open-catalog-image{
+        border:5px solid #AF4FFF;
+        outline: none;
+}
+
+.open-catalog-item:focus b{
+    color:#AF4FFF;
+    outline: none;
+}
+.open-catalog-item:active .open-catalog-image{
+    background: #FFC700;
+    opacity: 0.3;
+    outline: none;
+}
+
+.open-catalog-item:active b{
+opacity: 0.3;
+outline: none;
+}
+
+/*purchase terms*/
 .condition {
-    background-color: #F0F0F0;
+    position: relative;
+}
+.condition::before {
+    position:absolute;
+    content:"";
+    background: #F0F0F0;
+    height: 288px;
+    width: 100%;
+    top:100px;
 }
 
 .condition-content {
     display: flex;
     margin-bottom: 69px;
+    position: relative;
 }
 
 .condition-list {
@@ -637,9 +726,45 @@ a .user-action-icon {
 
 .condition .button-all {
     display: block;
-    /*width: 160px;*/
-    /*text-align: center;*/
     margin-bottom: 45px;
+    text-align: center;
+    width: 160px;
+    padding: 9px 0 11px 0;
+}
+.condition .button-all::before{
+    position: absolute;
+    content:"";
+    background-color:#FFE17F;
+    width:160px;
+    height: 8px;
+    left:0;
+    top:50%;
+    transform: translateY(-50%);
+    z-index:1;
+}
+
+.condition .button-all:focus::before{
+    background-color:#AF4FFF;
+}
+
+.condition .button-all:hover{
+    background-color:#FFC700;
+}
+
+.condition-list::after{
+    position:absolute;
+    content: "";
+    background:#000000;
+    height:319px;
+    width: 7px;
+    top:0px;
+    left:280px;
+}
+.condition .button-all:active{
+    background-color:#000000;
+    color:#FFE17F; 
+    width:100%;
+    text-align:start;       
 }
 
 .description-list {
@@ -728,10 +853,24 @@ a .user-action-icon {
 
 .additional-info .container {
     display: flex;
-    margin-top: 42px;
+    padding-top: 42px;
     margin-bottom: 87px;
+    position: relative;
+}
+.about-us::after,
+.contacts::after {
+    position:absolute;
+content: "";
+background-color: #000000;
+width: 80px;
+height: 7px;
+top:0;
+left:0;
 }
 
+.contacts::after {
+    left: 600px;
+}
 .about-us h2,
 .contacts h2 {
     margin: 0;
@@ -897,8 +1036,13 @@ a .user-action-icon {
     font-size: 16px;
     background-color: #444444;
     color: #ffffff;
+    position: relative;
 }
 
+.logo-link {
+    position:absolute;
+    top:62px;
+}
 .contacts-info-text {
     line-height: 19px;
 }
@@ -920,8 +1064,8 @@ a .user-action-icon {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 97px;
-    padding-bottom: 49px;
+    padding-top: 113px;
+    padding-bottom: 39px;
 }
 
 .footer-content {
@@ -992,13 +1136,32 @@ a .user-action-icon {
 }
 
 .contact-ph {
+    align-self: center;
     margin-left: auto;
     text-align: right;
+    padding: 3px 15px 5px 15px;
+    border: 2px solid transparent;
+    border-radius: 25px;
+    outline: none;
 }
 
+.contact-ph:hover{
+color: #FFC700;
+}
+.contact-ph:focus{
+    color: white;
+    border: 2px solid #AF4FFF;
+    border-radius: 25px;
+}
+
+.contact-ph:active{
+    color: #FFC700;
+    opacity:0.3;
+}
 .social-networks {
     display: flex;
     margin-bottom: 61px;
+    position: relative;
 }
 
 .social-networks-list {
@@ -1007,30 +1170,51 @@ a .user-action-icon {
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
-    list-style-type: none;
     width: 1160px;
+    list-style-type: none;
     justify-content: center;
+    padding-top:8px;
 }
-
-.social-networks-item {
+.social-networks-list::before{
+    position:absolute;
+    content: "";
+    background: #FFC700;
+    height: 7px;
+    width:80px;
+    top:50%;
+    left:0;
+}
+.social-networks-icon {
+    display: block;
     margin-right: 15px;
     background: rgba(255, 255, 255, 0.3);
     border-radius: 50%;
     height: 40px;
     width: 40px;
+    border: 5px solid #444444;
+    box-sizing: content-box;
+    position: relative;
+    outline: none;;
 }
 
+.networks-icon{
+    position:absolute;
+}
 .social-networks-item:last-child {
     margin-right: 0;
 }
 
-.social-networks-item:hover {
-    fill: #FFC700;
+.social-networks-icon:hover {
+    background-color: #FFC700;
 }
 
 .social-networks-icon:focus {
     border: 5px solid #AF4FFF;
-    border-radius: 50%;
+    box-sizing: content-box;
+}
+
+.social-networks-icon:active {
+    opacity: 0.3;
 }
 
 form .button {
@@ -1039,7 +1223,26 @@ form .button {
     border: transparent;
 }
 
+.htmlacademy-link {
+    position: absolute;
+    right:0;
+    top:0;
+    align-self: center;
+    border: 2px solid transparent;
+    padding: 10px 10px 0px 10px;
+    outline: none;
+}
 
+.htmlacademy-link:focus {
+    border: 2px solid #AF4FFF;
+    border-radius: 20px;
+}
+
+.html-logo {
+    outline: none;
+    height: 34px;
+    width:115px;
+}
 /*catalog*/
 
 .user-name {
