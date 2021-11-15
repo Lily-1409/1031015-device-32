@@ -44,7 +44,7 @@
                                 </a>
                             </li>
                             <li class="user-action">
-                                <a href="#">
+                                <a class="basket" href="#">
                                     <svg class="user-action-icon" width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path
                                                 d="m15.3 5-3.5.2L8.6.3C8.5.1 8.2 0 8 0c-.2 0-.5.1-.6.3L4.2 5.2H.7c-.4 0-.7.3-.7.7v.2l1.9 6.8c.2.7.7 1.1 1.4 1.1h9.4c.7 0 1.2-.4 1.4-1.1L16 6v-.2c0-.4-.3-.8-.7-.8ZM8 1.9l2.2 3.2H5.9L8 1.9Z"
@@ -100,18 +100,19 @@
             </div>
         </header>
         <main class="main-index">
-            <div class="slider">
-                <div class="container">
+            <div class="container">
+                <div class="slider">
                     <div class="slider-wrapper">
                         <div class="slider-item">
-                            <img class="slider-image" src="images/slider/slider-1.jpg" width="560" height="560" alt="Товар-1">
+                            <img class="slider-image" src="images/slider/slider-1.png" width="560" height="560" alt="Товар-1">
                             <div class="slider-content">
+                                <div class="slider-number">01</div>
                                 <h2 class="title">Порхает как бабочка, жалит как пчела!
                                 </h2>
                                 <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
                                 </p>
                                 <a class="button button-all" href="#">Подробнее
-                                 </a>
+                                    </a>
                                 <table class="characteristics">
                                     <tr class="value">
                                         <td>800 м</td>
@@ -125,8 +126,9 @@
                             </div>
                         </div>
                         <div class="slider-item visually-hidden">
-                            <img class="slider-image" src="images/slider/slider-2.jpg" width="560" height="560" alt="Товар-2">
+                            <img class="slider-image" src="images/slider/slider-2.png" width="560" height="560" alt="Товар-2">
                             <div class="slider-content">
+                                <div class="slider-number">02</div>
                                 <h2 class="title">Худеем правильно!
                                 </h2>
                                 <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
@@ -144,14 +146,15 @@
                             </div>
                         </div>
                         <div class="slider-item visually-hidden">
-                            <img class="slider-image" src="images/slider/slider-3.jpg" width="560" height="560" alt="Товар-3">
+                            <img class="slider-image" src="images/slider/slider-3.png" width="560" height="560" alt="Товар-3">
                             <div class="slider-content">
+                                <div class="slider-number">03</div>
                                 <h2 class="title">Делай селфи, как Бен Стиллер!
                                 </h2>
                                 <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
                                 </p>
                                 <a class="button button-all" href="#">Подробнее
-                                 </a>
+                                    </a>
                                 <table class="characteristics">
                                     <tr class="value">
                                         <td>8,5 м</td>
@@ -169,30 +172,28 @@
                         <button class="slider-button slider-prev" type="button"><img class="slider-prev-img"
                             src="images/left-tall-arrow.svg" width="20" hight="60" alt="Предыдущий слайд">
                             <span class="visually-hidden">Предыдущий слайд</span>
-                         </button>
+                            </button>
                         <button class="slider-button slider-next" type="button"><img class="slider-next-img"
                             src="images/right-tall-arrow.svg" width="20" hight="60" alt="Следующий слайд">
                             <span class="visually-hidden">Следующий слайд</span>
-                     </button>
-                        <div class="index-pagination">
-                            <ul class="slider-pagination">
-                                <li class="slider-pagination-item">
-                                    <button class="slider-pagination-button slider-pagination-button-current" type="button">
-                            <span class="visually-hidden">1 товар</span>
-                            </button>
-                                </li>
-                                <li class="slider-pagination-item">
-                                    <button class="slider-pagination-button slider-pagination-button-current" type="button">
-                            <span class="visually-hidden">2 товар</span>
-                            </button>
-                                </li>
-                                <li class="slider-pagination-item">
-                                    <button class="slider-pagination-button slider-pagination-button-current" type="button">
-                            <span class="visually-hidden">3 товар</span>
-                            </button>
-                                </li>
-                            </ul>
-                        </div>
+                        </button>
+                        <ul class="slider-pagination">
+                            <li class="slider-pagination-item">
+                                <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                        <span class="visually-hidden">1 товар</span>
+                        </button>
+                            </li>
+                            <li class="slider-pagination-item">
+                                <button class="slider-pagination-button" type="button">
+                        <span class="visually-hidden">2 товар</span>
+                        </button>
+                            </li>
+                            <li class="slider-pagination-item">
+                                <button class="slider-pagination-button" type="button">
+                        <span class="visually-hidden">3 товар</span>
+                        </button>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -256,13 +257,13 @@
                     <div class="condition-content">
                         <ul class="condition-list">
                             <li class="condition-item">
-                                <a class="condition button-all" href="#">Доставка</a>
+                                <a class="button-all condition-button-all current-condition" href="#">Доставка</a>
                             </li>
                             <li class="condition-item">
-                                <a class="condition button-all" href="#">Гарантия</a>
+                                <a class="button-all condition-button-all" href="#">Гарантия</a>
                             </li>
                             <li class="condition-item">
-                                <a class="condition button-all" href="#">Кредит</a>
+                                <a class="button-all condition-button-all" href="#">Кредит</a>
                             </li>
                         </ul>
                         <ul class="description-list">
@@ -378,7 +379,7 @@
         <footer class="page-footer">
             <div class="container">
                 <div class="footer-content">
-                    <a class="logo-link">
+                    <a class="footer-logo-link">
                         <img class="footer-logo" src="images/footer-logo.svg" width="145" height="36" alt="Логотип Device">
                     </a>
                     <div class="footer-contacts">
@@ -410,43 +411,43 @@
                         <ul class="social-networks-list">
                             <li class="social-networks-item">
                                 <a class="social-networks-icon" href="http://www.facebook.com/htmlacademy">
-                                    <svg class="networks-icon" width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M22.5 14H25v-3h-3.4c-2.8 0-3.6 1.7-3.6 4.2V17h-2v3h2v9h3v-9h3.3l.6-3H21v-1.5c0-.8.3-1.5 1.5-1.5Z" fill="#444"/>
+                                    <svg class="networks-icon" width="40" height="40" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M22.5 14H25v-3h-3.4c-2.8 0-3.6 1.7-3.6 4.2V17h-2v3h2v9h3v-9h3.3l.6-3H21v-1.5c0-.8.3-1.5 1.5-1.5Z" />
                                             </svg>
                                 </a>
                             </li>
                             <li class="social-networks-item">
                                 <a class="social-networks-icon" href="http://www.instagram.com/htmlacademy/">
-                                    <svg class="networks-icon" width="40" height="40" fill="white" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M26.7 13.3c-.9-.9-2-1.3-3.4-1.3h-6.6c-2.8 0-4.7 1.9-4.7 4.7v6.6c0 1.4.4 2.6 1.4 3.4.9.9 2 1.3 3.3 1.3h6.6c1.4 0 2.6-.4 3.4-1.3.8-.9 1.3-2 1.3-3.4v-6.6c0-1.4-.4-2.6-1.3-3.4ZM20 24.1c-2.2 0-4.1-1.8-4.1-4.1s1.9-4.1 4.1-4.1c2.2 0 4.1 1.8 4.1 4.1s-1.9 4.1-4.1 4.1Zm4.6-7.4c-.7 0-1.3-.5-1.3-1.3s.5-1.3 1.3-1.3c.7 0 1.3.6 1.3 1.3 0 .7-.6 1.3-1.3 1.3Z" fill="#444"/>
+                                    <svg class="networks-icon" width="40" height="40" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M26.7 13.3c-.9-.9-2-1.3-3.4-1.3h-6.6c-2.8 0-4.7 1.9-4.7 4.7v6.6c0 1.4.4 2.6 1.4 3.4.9.9 2 1.3 3.3 1.3h6.6c1.4 0 2.6-.4 3.4-1.3.8-.9 1.3-2 1.3-3.4v-6.6c0-1.4-.4-2.6-1.3-3.4ZM20 24.1c-2.2 0-4.1-1.8-4.1-4.1s1.9-4.1 4.1-4.1c2.2 0 4.1 1.8 4.1 4.1s-1.9 4.1-4.1 4.1Zm4.6-7.4c-.7 0-1.3-.5-1.3-1.3s.5-1.3 1.3-1.3c.7 0 1.3.6 1.3 1.3 0 .7-.6 1.3-1.3 1.3Z"/>
                                             </svg>
                                 </a>
                             </li>
                             <li class="social-networks-item">
                                 <a class="social-networks-icon" href="http://www.twitter.com/htmlacademy_ru">
-                                    <svg class="networks-icon" width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg class="networks-icon" width="40" height="40" xmlns="http://www.w3.org/2000/svg">
                                                 <g clip-path="url(#a)">
-                                                    <path d="M22.7 13.1c1.5-.5 2.6.3 3.2 1.1.5-.2 1.1-.4 1.7-.6 0 .8-.5 1.4-.8 1.6.7.2 1.2-.4 1.2-.4-.1.9-.9 1.7-1.4 1.9-.2 6.3-2.8 10.4-8.9 10.3h-.4c-.3 0-3.7-.4-4.3-1.8 2 .2 3.4-.4 4.1-1.1-.8-.3-2.4-.4-2.6-2.8.3.2.5.3 1.1.2-1.1-.8-2.3-1.5-2.2-3.5.3.3.9.5 1.2.4-.6-.2-1.8-3.1-.8-4.6 1.6 1.7 3.3 3.4 6.3 3.5.2-2.1 1-3.5 2.6-4.2Z" fill="#444"/>
+                                                    <path d="M22.7 13.1c1.5-.5 2.6.3 3.2 1.1.5-.2 1.1-.4 1.7-.6 0 .8-.5 1.4-.8 1.6.7.2 1.2-.4 1.2-.4-.1.9-.9 1.7-1.4 1.9-.2 6.3-2.8 10.4-8.9 10.3h-.4c-.3 0-3.7-.4-4.3-1.8 2 .2 3.4-.4 4.1-1.1-.8-.3-2.4-.4-2.6-2.8.3.2.5.3 1.1.2-1.1-.8-2.3-1.5-2.2-3.5.3.3.9.5 1.2.4-.6-.2-1.8-3.1-.8-4.6 1.6 1.7 3.3 3.4 6.3 3.5.2-2.1 1-3.5 2.6-4.2Z"/>
                                                 </g>
-                                                <defs><clipPath id="a"><path fill="#fff" transform="translate(13 13)" d="M0 0h15v14H0z"/></clipPath></defs>
+                                                <defs><clipPath id="a"><path transform="translate(13 13)" d="M0 0h15v14H0z"/></clipPath></defs>
                                             </svg>
                                 </a>
                             </li>
                         </ul>
                         <a class="htmlacademy-link" href="https://htmlacademy.ru/study">
-                            <svg class="html-logo" aria-hidden="true" focusable="false" width="115" height="34" viewBox="0 0 115 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 12.8999V15.4999H2.5V12.8999H0Z" fill="#FFC700"/>
-                                        <path d="M11.6 4.5C10 4.5 8.80002 5.2 8.00002 6.2H7.90002V0H5.90002V15.5H7.90002V10.2C7.90002 8.1 9.20002 6.6 11.2 6.6C13 6.6 14.1 8 14.1 9.8V15.5H16.1V9.4C16.2 6.4 14.3 4.5 11.6 4.5Z" fill="#FFC700"/>
-                                        <path d="M26.6 4.8001H21.8V1.1001H19.8V4.9001H17.9V6.9001H19.8V12.9001C19.8 14.6001 20.8 15.6001 22.5 15.6001H26.6V13.6001H22.9C22.2 13.6001 21.8 13.2001 21.8 12.5001V6.8001H26.6V4.8001Z" fill="#FFC700"/>
-                                        <path d="M41.1 4.6001C39.5 4.6001 38.2 5.4001 37.6 6.7001H37.5C36.9 5.5001 35.7 4.6001 34.1 4.6001C32.7 4.6001 31.6 5.4001 31 6.4001H30.9V4.8001H29V15.4001H31V10.0001C31 8.0001 32 6.5001 33.6 6.5001C35.1 6.5001 36 7.5001 36 9.1001V15.4001H38V9.8001C38 7.4001 39.4 6.5001 40.6 6.5001C42.1 6.5001 43 7.5001 43 9.1001V15.4001H45V8.9001C45.1 6.4001 43.6 4.6001 41.1 4.6001Z" fill="#FFC700"/>
-                                        <path d="M47.8 12.7C47.8 14.4 48.8 15.4 50.6 15.4H52.6V13.4H50.9001C50.2001 13.4 49.8 13 49.8 12.3V0H47.8V12.7Z" fill="#FFC700"/>
-                                        <path d="M28.9 19.6999C28 18.5999 26.7 17.8999 25 17.8999C21.9 17.8999 19.6 20.1999 19.6 23.4999C19.6 26.7999 21.9 29.0999 25 29.0999C26.8 29.0999 28 28.2999 28.8 27.1999H28.9V28.7999H30.9V18.1999H28.9V19.6999ZM25.3 27.0999C23.1 27.0999 21.7 25.4999 21.7 23.4999C21.7 21.4999 23.1 19.8999 25.3 19.8999C27.5 19.8999 28.9 21.4999 28.9 23.4999C28.9 25.3999 27.5 27.0999 25.3 27.0999Z" fill="#FFC700"/>
-                                        <path d="M44.2 21.9999C43.7 19.5999 41.5999 17.8999 38.7999 17.8999C35.3999 17.8999 33.2 20.3999 33.2 23.4999C33.2 26.5999 35.3999 29.0999 38.7999 29.0999C41.5999 29.0999 43.7 27.2999 44.2 24.8999H42.0999C41.6999 26.1999 40.3999 27.1999 38.7999 27.1999C36.5999 27.1999 35.2 25.5999 35.2 23.5999C35.2 21.5999 36.5999 19.9999 38.7999 19.9999C40.3999 19.9999 41.5999 20.9999 42.0999 22.1999H44.2V21.9999Z" fill="#FFC700"/>
-                                        <path d="M55.1 19.6999C54.2 18.5999 52.9001 17.8999 51.2001 17.8999C48.1001 17.8999 45.8 20.1999 45.8 23.4999C45.8 26.7999 48.1001 29.0999 51.2001 29.0999C53.0001 29.0999 54.2 28.2999 55 27.1999H55.1V28.7999H57.1V18.1999H55.1V19.6999ZM51.5 27.0999C49.3 27.0999 47.9001 25.4999 47.9001 23.4999C47.9001 21.4999 49.3 19.8999 51.5 19.8999C53.7 19.8999 55.1 21.4999 55.1 23.4999C55.1 25.3999 53.6 27.0999 51.5 27.0999Z" fill="#FFC700"/>
-                                        <path d="M68.7 19.7999C67.8 18.6999 66.5 17.8999 64.8 17.8999C61.7 17.8999 59.4 20.1999 59.4 23.4999C59.4 26.7999 61.6 29.0999 64.8 29.0999C66.5 29.0999 67.8 28.2999 68.6 27.2999H68.7V28.7999H70.7V13.3999H68.7V19.7999ZM65.1 27.0999C62.9 27.0999 61.5 25.4999 61.5 23.4999C61.5 21.4999 62.9 19.8999 65.1 19.8999C67.3 19.8999 68.7 21.4999 68.7 23.4999C68.6 25.4999 67.2 27.0999 65.1 27.0999Z" fill="#FFC700"/>
-                                        <path d="M78.3 17.8999C75 17.8999 72.8 20.3999 72.8 23.4999C72.8 26.4999 74.9 29.0999 78.3 29.0999C80.8 29.0999 82.8 27.7999 83.5 25.4999H81.4C80.9 26.4999 79.8 27.0999 78.4 27.0999C76.5 27.0999 75.1 25.7999 75 24.1999H83.8C84 20.5999 81.8 17.8999 78.3 17.8999ZM78.3 19.7999C80 19.7999 81.3 20.7999 81.6 22.3999H75.1C75.4 20.8999 76.6 19.7999 78.3 19.7999Z" fill="#FFC700"/>
-                                        <path d="M98.2 17.8999C96.6 17.8999 95.3 18.6999 94.6 19.8999H94.5C93.9 18.6999 92.7 17.8999 91.1 17.8999C89.7 17.8999 88.6 18.5999 88 19.6999V18.1999H86.1V28.7999H88.1V23.3999C88.1 21.3999 89.1 19.9999 90.7 19.8999C92.2 19.8999 93.1 20.8999 93.1 22.4999V28.7999H95.1V23.1999C95.1 20.7999 96.5 19.8999 97.7 19.8999C99.2 19.8999 100.1 20.8999 100.1 22.4999V28.7999H102.1V22.2999C102.2 19.6999 100.7 17.8999 98.2 17.8999Z" fill="#FFC700"/>
-                                        <path d="M109.4 27.0001L105.8 18.1001H103.6L108.4 29.7001C108.1 30.6001 107.7 30.9001 106.7 30.9001H104.2V32.9001H106.7C108.5 32.9001 109.5 32.1001 110.2 30.3001L114.9 18.1001H112.8L109.4 27.0001Z" fill="#FFC700"/>
+                            <svg class="html-logo" aria-hidden="true" focusable="false" width="115" height="34" viewBox="0 0 115 34" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 12.8999V15.4999H2.5V12.8999H0Z" />
+                                        <path d="M11.6 4.5C10 4.5 8.80002 5.2 8.00002 6.2H7.90002V0H5.90002V15.5H7.90002V10.2C7.90002 8.1 9.20002 6.6 11.2 6.6C13 6.6 14.1 8 14.1 9.8V15.5H16.1V9.4C16.2 6.4 14.3 4.5 11.6 4.5Z" />
+                                        <path d="M26.6 4.8001H21.8V1.1001H19.8V4.9001H17.9V6.9001H19.8V12.9001C19.8 14.6001 20.8 15.6001 22.5 15.6001H26.6V13.6001H22.9C22.2 13.6001 21.8 13.2001 21.8 12.5001V6.8001H26.6V4.8001Z" />
+                                        <path d="M41.1 4.6001C39.5 4.6001 38.2 5.4001 37.6 6.7001H37.5C36.9 5.5001 35.7 4.6001 34.1 4.6001C32.7 4.6001 31.6 5.4001 31 6.4001H30.9V4.8001H29V15.4001H31V10.0001C31 8.0001 32 6.5001 33.6 6.5001C35.1 6.5001 36 7.5001 36 9.1001V15.4001H38V9.8001C38 7.4001 39.4 6.5001 40.6 6.5001C42.1 6.5001 43 7.5001 43 9.1001V15.4001H45V8.9001C45.1 6.4001 43.6 4.6001 41.1 4.6001Z" />
+                                        <path d="M47.8 12.7C47.8 14.4 48.8 15.4 50.6 15.4H52.6V13.4H50.9001C50.2001 13.4 49.8 13 49.8 12.3V0H47.8V12.7Z" />
+                                        <path d="M28.9 19.6999C28 18.5999 26.7 17.8999 25 17.8999C21.9 17.8999 19.6 20.1999 19.6 23.4999C19.6 26.7999 21.9 29.0999 25 29.0999C26.8 29.0999 28 28.2999 28.8 27.1999H28.9V28.7999H30.9V18.1999H28.9V19.6999ZM25.3 27.0999C23.1 27.0999 21.7 25.4999 21.7 23.4999C21.7 21.4999 23.1 19.8999 25.3 19.8999C27.5 19.8999 28.9 21.4999 28.9 23.4999C28.9 25.3999 27.5 27.0999 25.3 27.0999Z" />
+                                        <path d="M44.2 21.9999C43.7 19.5999 41.5999 17.8999 38.7999 17.8999C35.3999 17.8999 33.2 20.3999 33.2 23.4999C33.2 26.5999 35.3999 29.0999 38.7999 29.0999C41.5999 29.0999 43.7 27.2999 44.2 24.8999H42.0999C41.6999 26.1999 40.3999 27.1999 38.7999 27.1999C36.5999 27.1999 35.2 25.5999 35.2 23.5999C35.2 21.5999 36.5999 19.9999 38.7999 19.9999C40.3999 19.9999 41.5999 20.9999 42.0999 22.1999H44.2V21.9999Z" />
+                                        <path d="M55.1 19.6999C54.2 18.5999 52.9001 17.8999 51.2001 17.8999C48.1001 17.8999 45.8 20.1999 45.8 23.4999C45.8 26.7999 48.1001 29.0999 51.2001 29.0999C53.0001 29.0999 54.2 28.2999 55 27.1999H55.1V28.7999H57.1V18.1999H55.1V19.6999ZM51.5 27.0999C49.3 27.0999 47.9001 25.4999 47.9001 23.4999C47.9001 21.4999 49.3 19.8999 51.5 19.8999C53.7 19.8999 55.1 21.4999 55.1 23.4999C55.1 25.3999 53.6 27.0999 51.5 27.0999Z" />
+                                        <path d="M68.7 19.7999C67.8 18.6999 66.5 17.8999 64.8 17.8999C61.7 17.8999 59.4 20.1999 59.4 23.4999C59.4 26.7999 61.6 29.0999 64.8 29.0999C66.5 29.0999 67.8 28.2999 68.6 27.2999H68.7V28.7999H70.7V13.3999H68.7V19.7999ZM65.1 27.0999C62.9 27.0999 61.5 25.4999 61.5 23.4999C61.5 21.4999 62.9 19.8999 65.1 19.8999C67.3 19.8999 68.7 21.4999 68.7 23.4999C68.6 25.4999 67.2 27.0999 65.1 27.0999Z" />
+                                        <path d="M78.3 17.8999C75 17.8999 72.8 20.3999 72.8 23.4999C72.8 26.4999 74.9 29.0999 78.3 29.0999C80.8 29.0999 82.8 27.7999 83.5 25.4999H81.4C80.9 26.4999 79.8 27.0999 78.4 27.0999C76.5 27.0999 75.1 25.7999 75 24.1999H83.8C84 20.5999 81.8 17.8999 78.3 17.8999ZM78.3 19.7999C80 19.7999 81.3 20.7999 81.6 22.3999H75.1C75.4 20.8999 76.6 19.7999 78.3 19.7999Z" />
+                                        <path d="M98.2 17.8999C96.6 17.8999 95.3 18.6999 94.6 19.8999H94.5C93.9 18.6999 92.7 17.8999 91.1 17.8999C89.7 17.8999 88.6 18.5999 88 19.6999V18.1999H86.1V28.7999H88.1V23.3999C88.1 21.3999 89.1 19.9999 90.7 19.8999C92.2 19.8999 93.1 20.8999 93.1 22.4999V28.7999H95.1V23.1999C95.1 20.7999 96.5 19.8999 97.7 19.8999C99.2 19.8999 100.1 20.8999 100.1 22.4999V28.7999H102.1V22.2999C102.2 19.6999 100.7 17.8999 98.2 17.8999Z" />
+                                        <path d="M109.4 27.0001L105.8 18.1001H103.6L108.4 29.7001C108.1 30.6001 107.7 30.9001 106.7 30.9001H104.2V32.9001H106.7C108.5 32.9001 109.5 32.1001 110.2 30.3001L114.9 18.1001H112.8L109.4 27.0001Z" />
                                     </svg>
                         </a>
                     </div>
