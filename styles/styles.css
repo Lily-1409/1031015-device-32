@@ -919,8 +919,18 @@ left:0;
 
 .delivery-item {
     margin-bottom: 20px;
+    position: relative;
 }
-
+.delivery-item::before {
+    position:absolute;
+    content: "";
+    background-color:#FFC700;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    left: -30px;
+    top: 7px;
+}
 .about-us {
     margin-right: 103px;
 }
@@ -1081,7 +1091,9 @@ left:0;
 .free {
     align-self: center;
 }
-
+.check-mark {
+    margin-right:21px;
+}
 
 /*footer*/
 
