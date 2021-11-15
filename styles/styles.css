@@ -110,8 +110,9 @@ body a {
 
 .logo-link {
     position: absolute;
+    top: 0;
     left: 60px;
-    margin-top: -84px;
+    transform: translateY(-50%);
 }
 
 .header-container {
