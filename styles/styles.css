@@ -490,22 +490,19 @@ a .user-action-icon {
 }
 
 /*Slider*/
+
 .slider {
-    margin-top: -189px;
-}
-
-.slider-wrapper {
     position: relative;
-    padding-top: 300px;
+    padding-top: 126px;
 }
 
-.slider-wrapper::before{
+.slider::before{
     position: absolute;
     top: 0;
     left: 0;
     display: block;
     width: 100%;
-    height: 300px;
+    height: 126px;
     content: "";
     background-color: #FFE17F;
 }
@@ -602,7 +599,7 @@ a .user-action-icon {
     padding: 0;
     margin: 0;
     list-style-type: none;
-    top: 486px;
+    top: 310px;
     right: 0;
 }
 
@@ -629,6 +626,7 @@ a .user-action-icon {
 
 .slider-button {
     position:absolute;
+    top: 276px;
     padding: 0;
     background-color: transparent;
     border: 2px solid transparent;
@@ -656,12 +654,10 @@ a .user-action-icon {
 }
 
 .slider-prev {
-    top: 376px;
     left: 0;
 }
 
 .slider-next {
-    top: 376px;
     left: 540px;
 }
 
