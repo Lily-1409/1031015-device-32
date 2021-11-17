@@ -53,6 +53,51 @@
                                     </svg>
                                     Корзина
                                 </a>
+                                <div class="popup popup-cart visually-hidden">
+                                    <div class="popup-content">
+                                        <ul class="cart-list">
+                                            <li>
+                                                <div class="cart-item">
+                                                    <div class="cart-item-image">
+                                                        <img src="./images/catalog/product-1.jpg" alt="Товар" width="41" height="41">
+                                                    </div>
+                                                    <div class="cart-item-title">Любительская селфи-палка</div>
+                                                    <div class="cart-item-actions">
+                                                        <button class="close-button">
+                                                            <span class="visually-hidden">Удалить</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cart-item">
+                                                    <div class="cart-item-image">
+                                                        <img src="./images/catalog/product-2.jpg" alt="Товар" width="41" height="41">
+                                                    </div>
+                                                    <div class="cart-item-title">Профессиональная селфи-палка</div>
+                                                    <div class="cart-item-actions">
+                                                        <button type="button" class="close-button">
+                                                            <span class="visually-hidden">Удалить</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="cart-total">
+                                            <div class="cart-total-count">
+                                                Товаров: 2
+                                            </div>
+                                            <div class="cart-total-price">
+                                                Сумма: 2000 ₽
+                                            </div>
+                                        </div>
+                                        <div class="cart-footer">
+                                            <button type="button" class="cart-button">
+                                                Открыть корзину
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -472,6 +517,86 @@
                 </div>
             </div>
         </footer>
+        <div class="modal visually-hidden">
+            <div class="modal-content">
+                <button class="modal-close">
+                    <span class="visually-hidden">
+                        Закрыть
+                    </span>
+                </button>
+                <div class="modal-title">
+                    Доставка под заказ
+                </div>
+                <form class="order-form">
+                    <div class="order-form-row">
+                        <div class="order-form-name">
+                            <div class="text-input text-input-error">
+                                <label class="input-label" for="order-username">
+                                    Ваше имя:
+                                </label>
+                                <div class="text-input-field">
+                                    <input id="order-username" type="text" value="" placeholder="Имя Фамилия">
+                                    <img class="text-input-icon" src="./images/user.svg" alt="Пользователь">    
+                                </div>
+                                <div class="text-input-help">
+                                    Пожалуйста, представьтесь
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-form-email">
+                            <div class="text-input">
+                                <label class="input-label" for="order-email">
+                                    Ваш e-mail:
+                                </label>
+                                <div class="text-input-field">
+                                    <input id="order-email" type="email" value="" placeholder="Email">
+                                    <img class="text-input-icon" src="./images/email.svg" alt="Пользователь">    
+                                </div>
+                                <div class="text-input-help">
+                                    Забавный у вас адрес
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-form-row">
+                        <div class="order-form-comment">
+                            <div class="text-input">
+                                <label class="input-label" for="order-comment">
+                                    Что нужно привезти:
+                                </label>
+                                <div class="text-input-field">
+                                    <input id="order-comment" type="text" value="" placeholder="В свободной форме">   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-form-counter">
+                            <div class="counter-input">
+                                <label class="input-label" for="order-counter">
+                                    Количество:
+                                    <span class="label-info">
+                                        i
+                                        <span class="label-info-popup">
+                                            Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.
+                                        </span>
+                                    </span>
+                                </label>
+                                <div class="counter-input-content">
+                                    <button type="button" class="counter-input-button counter-input-button-minus">
+                                        <span class="visually-hidden">Минус</span>
+                                    </button>
+                                    <input id="order-counter" type="text" value="1">
+                                    <button type="button" class="counter-input-button counter-input-button-plus">
+                                        <span class="visually-hidden">Плюс</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="common-button">
+                        <span>Отправить</span>
+                    </button>
+                </form>
+            </div>
+        </div>
     </body>
-
 </html>
